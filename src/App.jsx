@@ -42,8 +42,8 @@ function App() {
       <h1>Todo List</h1>
       {/* Formulaire pour ajouter une nouvelle tâche */}
       <form onSubmit={handleSubmit}>
-        <input type="text" value={inputValue} onChange={handleInputChange} />
-        <button type="submit">Add Todo</button>
+        <input type="text" className="form-control" value={inputValue} onChange={handleInputChange} />
+        <button type="submit" className="btn btn-primary">Add Todo</button>
       </form>
       {/* Affichage de la liste des tâches à l'aide du composant TodoList */}
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
